@@ -10,7 +10,7 @@ RUN python install-poetry.py --yes
 
 ENV PATH="${PATH}:/root/.local/bin"
 
-RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
+# RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
