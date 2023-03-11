@@ -3,6 +3,7 @@ name: Docker Image CI For [zyao97323/cirnobot:latest]
 on:
   push:
     branches: [ "release/scheduler" ]
+  workflow_dispatch:
 
 jobs:
   docker:
