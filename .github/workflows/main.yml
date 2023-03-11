@@ -33,3 +33,4 @@ jobs:
         with:
           push: true
           tags: zyao97323/cirnobot:latest
+          platforms: arm,ppc64le,riscv64,mips64le,mips64,arm64,s390x
