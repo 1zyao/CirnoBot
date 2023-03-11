@@ -16,7 +16,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
 WORKDIR /app
 
-COPY --from=requirements-stage /requirements.txt /app/requirements.txt
+COPY --from=requirements-stage ../requirements.txt /app/requirements.txt
 
 # RUN python3 -m pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 
