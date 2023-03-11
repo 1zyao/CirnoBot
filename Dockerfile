@@ -1,14 +1,14 @@
 FROM python:3.8 as requirements-stage
 
-WORKDIR /tmp
+# WORKDIR /tmp
 
-COPY ./pyproject.toml ./poetry.lock* /tmp/
+# COPY ./pyproject.toml ./poetry.lock* /tmp/
 
-RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py -o install-poetry.py
+# RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py -o install-poetry.py
 
-RUN python install-poetry.py --yes
+# RUN python install-poetry.py --yes
 
-ENV PATH="${PATH}:/root/.local/bin"
+# ENV PATH="${PATH}:/root/.local/bin"
 
 # RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
